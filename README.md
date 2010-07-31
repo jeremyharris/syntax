@@ -1,7 +1,7 @@
 # Croogo Plugin - SyntaxHighlighter
 
 Syntax is a syntax highlighter plugin for the [Croogo CMS][1]. It uses
-[SyntaxHighlighter][1] to highlight code found in your pages/posts. Initial
+[SyntaxHighlighter][2] to highlight code found in your pages/posts. Initial
 development (i.e., the learning process) was heavily borrowed from Fahad's
 Geshi plugin.
 
