@@ -12,7 +12,7 @@
 <br/>  echo 'test' . 5;
 <br/>  //end function
 <br/>}
-<br/>visit: <a href="http://crogo.org">http://crogo.org!</a>
+<br/>visit: <a href="http://croogo.org">http://croogo.org!</a>
 		 </<?php echo Configure::read('Syntax.tagName'); ?>>
     <br />
 	 <p>Below are a list of default settings for each SyntaxHighlighted area. For more information, visit <a href="http://alexgorbatchev.com/SyntaxHighlighter/manual/configuration/" target="_blank">SyntaxHighlighter Configuration</a>.</p>

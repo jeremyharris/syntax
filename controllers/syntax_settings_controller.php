@@ -17,6 +17,8 @@ class SyntaxSettingsController extends SyntaxAppController {
 
 	 var $uses = array('Setting');
 
+	 var $helpers = array('Syntax.Syntax');
+
 /**
  * Settings index
  */

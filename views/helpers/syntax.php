@@ -1,14 +1,14 @@
 <?php
 /**
- * Syntax Hook helper
+ * Syntax helper
  *
  * @package	   syntax
  * @subpackage syntax.views.helpers
  * @author	   Jeremy Harris <jeremy@42pixels.com>
  * @license	   http://www.opensource.org/licenses/mit-license.php The MIT License
- * @link	   http://42pixels.com
+ * @link			http://42pixels.com
  */
-class SyntaxHookHelper extends AppHelper {
+class SyntaxHelper extends AppHelper {
 
 /**
  * Other helpers used by this helper
