@@ -1,1 +1,1 @@
-<?php echo $html->link('<span class="ui-icon ui-icon-script"></span>' . __('SyntaxHighlighter', true), array('plugin' => 'syntax', 'controller' => 'syntax_settings', 'action' => 'index'), array('class' => Configure::read('Admin.menus') ? 'separator' : '', 'escape' => false)); ?>
+<?php echo $html->link(__('SyntaxHighlighter', true), array('plugin' => 'syntax', 'controller' => 'syntax_settings', 'action' => 'index')); ?>

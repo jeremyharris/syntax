@@ -1,14 +1,14 @@
 <?php
 /**
- * Syntax Hook component
+ * Syntax Activator
  *
  * @package	   syntax
- * @subpackage syntax.controllers.components
+ * @subpackage syntax.config
  * @author	   Jeremy Harris <jeremy@42pixels.com>
  * @license	   http://www.opensource.org/licenses/mit-license.php The MIT License
- * @link	   http://42pixels.com
+ * @link			http://42pixels.com
  */
-class SyntaxHookComponent extends Object {
+class SyntaxActivation extends Object {
 
 /**
  * Languages offered
@@ -42,12 +42,22 @@ class SyntaxHookComponent extends Object {
 	);
 
 /**
+ * onActivate will be called if this returns true
+ *
+ * @param  object $controller Controller
+ * @return boolean
+ */
+    public function beforeActivation(&$controller) {
+        return true;
+    }
+
+/**
  * Called after activating the hook in ExtensionsHooksController::admin_toggle()
  *
  * @param object $controller Controller
  * @return void
  */
-    public function onActivate(&$controller) {
+    public function onActivation(&$controller) {
 		$settings = array(
 			array(
 				'key' => 'Syntax.theme',
@@ -154,12 +164,22 @@ class SyntaxHookComponent extends Object {
     }
 
 /**
+ * onDeactivate will be called if this returns true
+ *
+ * @param  object $controller Controller
+ * @return boolean
+ */
+    public function beforeDeactivation(&$controller) {
+        return true;
+    }
+
+/**
  * Called after deactivating the hook in ExtensionsHooksController::admin_toggle()
  *
  * @param object $controller Controller
  * @return void
  */
-    public function onDeactivate(&$controller) {
+    public function onDeactivation(&$controller) {
 		$settings = $controller->Setting->find('all', array('conditions' => 'Setting.key LIKE "%Syntax.%"'));
 		if (count($settings) > 0) {
 			foreach($settings as $setting) {
