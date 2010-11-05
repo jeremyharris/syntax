@@ -51,7 +51,7 @@ class SyntaxHelper extends AppHelper {
 				$this->Html->script('/syntax/js/shBrush'.$lang[1], array('inline' => false));
 			}
 		}
-		$this->Html->css('/syntax/css/shCore', 'stylesheet', array('inline' => false));
+		$this->Html->css('/syntax/css/shCore'.ucfirst(Configure::read('Syntax.theme')), 'stylesheet', array('inline' => false));
 		$this->Html->css('/syntax/css/shTheme'.ucfirst(Configure::read('Syntax.theme')), 'stylesheet', array('inline' => false));
 		 
 		$configStr = '';
